@@ -32,6 +32,10 @@ public class MainActivity extends AppCompatActivity {
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+            
+            String [ ] forecastArray = {"Today - Sunny 88/63","Tomorrow - Foggy 88/63","Wed - Asteroids 88/63","Thu - Heavy Rain 88/63", "Fri - HELP TRAPPED IN WEATHERSTATION 88/63"};
+            
+            List<String> weekForecast = new ArrayList<String>(Arrays.asList(forecastArray));
             return rootView;
         }
     }
